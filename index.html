@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODAY TASK</title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="icon"href="download.png">
+    
+</head>
+<body>
+    <center>
+        <h1>MAKE IT A TERRIFIC DAY</h1>
+        <img scr="task.jpg" width="100px"><br>
+        <h2>complete your daily task</h2>
+        <hr>
+        <p>"Hello everyone, I'm here to lend a helping hand! You can assign tasks to me, and once they're completed, simply click the 'completed' button. I'm your friend in tackling your daily to-do list. Whether it's organizing your schedule, managing your inbox, I've got you covered. Just let me know what you need, and consider it done!"</p><br>
+    <div class="section">
+        <ol><h2 style="color:blue;">SECTIONS:</h2>
+            <li>Morning section 1 and 2</li>
+            <li>Afternoon section 1 and 2</li>
+            <li>Evening section 1 and 2</li>
+            <li>Night section 1</li>
+            <li>Additional section</li>
+        </ol>
+    </div>
+   </center>
+    <hr>
+    <center>
+    <div id="textcontainer">
+    <fieldset>
+        <legend><h2>ENTER YOUR TASK:</h2></legend>
+        <form id="taskForm">
+            <div class="task">
+                <h3>Morning TASK:</h3>
+                <table border="1">
+                    <tr>
+                        <td>Morning section 1:</td>
+                        <td><input type="text"placeholder="Enter your first task"></td>
+                    </tr>
+                    <tr>
+                        <td>Morning section 2:</td>
+                        <td><input type="text"placeholder="Enter your second task"></td>
+                    </tr>
+                </table>
+                <button type="button"onclick="submitTask()">submit</button>
+            </div>
+            <br>
+            <div class="task">
+                <h3>Afternoon TASK:</h3>
+                <table border="1">
+                   <tr>
+                       <td>Afternoon section 1:</td>
+                       <td><input type="text"placeholder="Enter your first task"></td>
+                    </tr>
+                    <tr>
+                        <td>Afternoon section 2:</td>
+                        <td><input type="text"placeholder="Enter your second task"></td>
+                    </tr>
+                </table>
+                <button type="button"onclick="submitTask()">submit</button>
+            </div>
+            <br>
+            <div class="task">
+                <h3>Evening TASK:</h3>   
+                <table border="1">
+                    <tr>
+                        <td>Evening section 1:</td>
+                        <td><input type="text"placeholder="Enter your first task"></td>
+                    </tr>
+                    <tr>
+                        <td>Evening section 2:</td>
+                        <td><input type="text"placeholder="Enter your second task"></td>
+                    </tr>
+                </table>
+                <button type="button"onclick="submitTask()">submit</button>
+            </div>
+            <br>
+            <div class="task">
+                <h3>Night TASK:</h3>
+                <table border="1">
+                    <tr>
+                       <td>section:</td>
+                       <td><input type="text"placeholder="Enter your task"></td>
+                    </tr>
+                </table>
+                <button type="button"onclick="submitTask()">submit</button>
+            </div>
+            <br>
+            <div class="task">
+                <h3>Additional TASK:</h3>
+                <table border="1">
+                    <tr>  
+                       <td>section:</td>
+                       <td><input type="text"placeholder="Enter your task"></td>
+                    </tr>
+                </table>
+                <button type="button"onclick="submitTask()">submit</button>
+            </div>
+        </form>
+    </fieldset>
+</div>
+</center>
+<hr>
+<center>
+       <h2>score:</h2>
+       <p id="scoreDisplay">0</p>
+    </center>
+<script src="script.js"></script>
+</body>
+</html>
